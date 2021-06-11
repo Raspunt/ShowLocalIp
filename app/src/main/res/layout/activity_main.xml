@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/findButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/raspberry_pi_id"
+        />
+
+    <ListView
+        android:id="@+id/list_of_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/findButton"
+        android:layout_above="@+id/footer"
+
+
+        />
+
+    <LinearLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+
+
+    <Button
+        android:id="@+id/MainPageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="@string/MainPage"
+        app:backgroundTint="#009688"
+        />
+
+    <Button
+        android:id="@+id/SettingsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="@string/settings"
+        app:backgroundTint="#3F51B5"
+        />
+
+</LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
